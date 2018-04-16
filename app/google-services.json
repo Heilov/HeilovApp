@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "742458317466",
+    "firebase_url": "https://heilov-95638.firebaseio.com",
+    "project_id": "heilov-95638",
+    "storage_bucket": "heilov-95638.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:742458317466:android:4b099f566197ebba",
+        "android_client_info": {
+          "package_name": "com.heilov"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "742458317466-1v8g27s55gk3cg1k2f257usid33dk3f3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.heilov",
+            "certificate_hash": "49e5c552eb53da0b284873af3a9aa370d74baa45"
+          }
+        },
+        {
+          "client_id": "742458317466-oobqpoqk3mij2vbc7fiei5qjodmgkdqm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBor-OFYDdTMLJBz8PoWv7LXiaNBsTSw6A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "742458317466-oobqpoqk3mij2vbc7fiei5qjodmgkdqm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
