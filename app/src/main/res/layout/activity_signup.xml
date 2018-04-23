@@ -1,24 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
+        android:layout_marginTop="8dp"
         android:background="@color/colorPrimaryDark"
         android:gravity="center"
         android:orientation="vertical"
-        android:padding="@dimen/activity_horizontal_margin">
+        android:padding="@dimen/activity_horizontal_margin"
+        app:layout_constraintTop_toTopOf="parent">
 
 
-        <ImageView
-            android:layout_width="@dimen/logo_w_h"
-            android:layout_height="@dimen/logo_w_h"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="30dp"
-            android:src="@mipmap/ic_launcher" />
+        <!--<ImageView-->
+        <!--android:layout_width="@dimen/logo_w_h"-->
+        <!--android:layout_height="@dimen/logo_w_h"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_marginBottom="30dp"-->
+        <!--android:src="@mipmap/ic_launcher" />-->
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
@@ -32,7 +35,7 @@
                 android:inputType="textEmailAddress"
                 android:maxLines="1"
                 android:singleLine="true"
-                android:textColor="@android:color/white" />
+                android:textColor="@color/colorPrimary" />
 
         </android.support.design.widget.TextInputLayout>
 
@@ -51,7 +54,7 @@
                 android:inputType="textPassword"
                 android:maxLines="1"
                 android:singleLine="true"
-                android:textColor="@android:color/white"
+                android:textColor="@color/colorPrimary"
                 tools:ignore="InvalidImeActionId" />
 
         </android.support.design.widget.TextInputLayout>
@@ -77,6 +80,28 @@
             android:textAllCaps="false"
             android:textColor="@color/colorAccent" />
 
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_buttonGoogle"
+            android:layout_width="214dp"
+            android:layout_height="wrap_content"
+            tools:ignore="DuplicateIds" />
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_buttonFb"
+            android:layout_width="214dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp" />
+
+        <com.twitter.sdk.android.core.identity.TwitterLoginButton
+            android:id="@+id/login_buttonTwitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="DuplicateIds" />
+
+
         <!-- Link to Login Screen -->
 
         <Button
@@ -87,8 +112,9 @@
             android:background="@null"
             android:text="@string/btn_link_to_login"
             android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="15dp" />
+            android:textColor="@color/colorAccent"
+            android:textSize="15dp"
+            tools:ignore="DuplicateIds" />
     </LinearLayout>
 
     <ProgressBar
